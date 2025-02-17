@@ -32,6 +32,8 @@
 </details>
 
 ---
+### **此版本为[caolib](https://github.com/caolib/typora-onelight-theme)大佬制作的改版，主要改变了字体等颜色以适配深色模式**
+
 
 ## **1.概览**
 
