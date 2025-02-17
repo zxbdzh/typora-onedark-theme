@@ -1,0 +1,349 @@
+@font-face {
+    font-family: "0xProto";
+    src: url("./onedark/fonts/0xProto-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "喵字果汁体";
+    src: url("./onedark/fonts/MiaoZi-GuoZhiTi.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+:root {
+    --bg-color: #282c34;
+    --code-bg-color: #21252b;
+    --text-color: #abb2bf;
+    --primary-btn-text-color: #fff;
+    --window-border: 1px solid #181a1f;
+    --active-file-bg-color: #2c313a;
+    --active-file-text-color: inherit;
+    --active-file-border-color: var(--main-red);
+    --side-bar-bg-color: var(--bg-color);
+    --item-hover-bg-color: hsla(0, 0%, 100%, .1);
+    --item-hover-text-color: var(--main-red);
+    --monospace: monospace;
+    --select-text-bg-color: #3b3e4d;
+
+    /* 主题色 */
+    --main-blue: #61afef;
+    --main-red: #e06c75;
+    --main-green: #98c379;
+    --main-purple: #c678dd;
+    --main-yellow: #e5c07b;
+    --light-color: #5c6370;
+    --code--bg-color: #21252b;
+    --code--bg-color-light: #2c313a;
+
+    /* 代码块颜色 */
+    --atom-gray-1: #5c6370;
+    --atom-gray-2: #abb2bf;
+    --atom-red: #e06c75;
+    --atom-green: #98c379;
+    --atom-blue: #61afef;
+    --atom-purple: #c678dd;
+    --atom-aqua: #56b6c2;
+    --atom-yellow: #e5c07b;
+    --atom-orange: #d19a66;
+
+    /* 字体 */
+    --main-font-family: "0xProto", "喵字果汁体", consolas, "微软雅黑", "PingFang SC", "Microsoft YaHei", sans-serif;
+
+    /* 悬浮 */
+    --item-bg-color-red: #e06c7538;
+    --item-bg-color-blue: #61afef42;
+
+    /* 阴影 */
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, .2);
+    --transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+    /* 左到右透明渐变 */
+    --gradient-color: linear-gradient(to right, #282c34, rgba(40, 44, 52, 0));
+
+    /* github警告框 */
+    --tip-color: #7ec699;
+    --tip-border: solid 0.5px #7ec69994;
+    --tip-bg-color: #283b2f;
+    --note-color: #61afef;
+    --note-border: solid 0.5px #61afef94;
+    --warning-color: #e5c07b;
+    --warning-border: solid 0.5px #e5c07b94;
+    --caution-color: #e06c75;
+    --caution-border: solid 0.5px #e06c7594;
+    --important-color: #c678dd;
+    --important-border: solid 0.5px #c678dd94;
+}
+
+/* 继承onelight.css的其他样式，但修改颜色相关的属性 */
+body {
+    font-family: var(--main-font-family);
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/* 标题颜色 */
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+    color: #fff;
+}
+
+/* 强调文本颜色 */
+#write strong {
+    color: var(--main-blue);
+}
+
+/* 引用块样式 */
+#write blockquote {
+    background: var(--gradient-color);
+    border-left: 5px solid var(--main-blue);
+    color: var(--text-color);
+}
+
+#write blockquote:hover {
+    background: var(--code-bg-color);
+}
+
+/* 链接样式 */
+#write a {
+    border-bottom: 2px solid var(--main-purple);
+    color: var(--main-purple);
+}
+
+/* 行内代码样式 */
+#write code {
+    background-color: var(--code-bg-color);
+    color: var(--main-red);
+}
+
+/* 代码块样式 */
+.md-fences {
+    background-color: var(--code-bg-color);
+    color: var(--text-color);
+}
+
+/* 代码高亮颜色 */
+.cm-s-inner .cm-keyword {
+    color: var(--atom-purple);
+}
+
+.cm-s-inner .cm-operator {
+    color: var(--atom-aqua);
+}
+
+.cm-s-inner .cm-variable-2 {
+    color: var(--atom-blue);
+}
+
+.cm-s-inner .cm-type,
+.cm-s-inner .cm-variable-3 {
+    color: var(--atom-orange);
+}
+
+.cm-s-inner .cm-builtin {
+    color: var(--atom-yellow);
+}
+
+.cm-s-inner .cm-atom {
+    color: var(--atom-orange);
+}
+
+.cm-s-inner .cm-number {
+    color: var(--atom-red);
+}
+
+.cm-s-inner .cm-def {
+    color: var(--atom-orange);
+}
+
+.cm-s-inner .cm-string {
+    color: var(--atom-green);
+}
+
+.cm-s-inner .cm-string-2 {
+    color: var(--atom-red);
+}
+
+.cm-s-inner .cm-comment {
+    color: var(--atom-gray-1);
+}
+
+.cm-s-inner .cm-variable {
+    color: var(--atom-blue);
+}
+
+.cm-s-inner .cm-meta {
+    color: var(--atom-red);
+}
+
+.cm-s-inner .cm-attribute {
+    color: var(--atom-purple);
+}
+
+.cm-s-inner .cm-property,
+.cm-s-inner .cm-qualifier {
+    color: var(--atom-red);
+}
+
+/* 代码块选中和hover样式 */
+.CodeMirror div.CodeMirror-selected {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.CodeMirror-focused div.CodeMirror-selected {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* 代码块光标颜色 */
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid var(--main-green);
+}
+
+/* 表格样式 */
+#write table tr {
+    background-color: var(--code-bg-color);
+    border-top: 1px solid var(--light-color);
+}
+
+#write table tr:nth-child(2n) {
+    background-color: var(--code--bg-color-light);
+}
+
+#write table tr th {
+    background-color: var(--item-bg-color-blue);
+    color: var(--main-blue);
+}
+
+/* 其他UI元素 */
+.megamenu-menu {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dropdown-menu {
+    background: rgba(40, 44, 52, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 字体大小 */
+#write {
+    letter-spacing: 0;
+    text-align: left;
+}
+
+#write,
+#write p {
+    font-size: 16px;
+}
+
+#write p {
+    line-height: 26px;
+    margin: 0;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+/* 标题字体大小 */
+#write h2 {
+    font-size: 1.7rem;
+    margin: 1em 0;
+}
+
+#write h3 {
+    font-size: 1.5rem;
+}
+
+#write h4 {
+    font-size: 1.25rem;
+}
+
+#write h5,
+#write h6 {
+    font-size: 1rem;
+}
+
+/* 代码字体和大小 */
+#write code,
+.md-fences,
+.CodeMirror,
+.CodeMirror-wrap .CodeMirror-code pre,
+.cm-s-inner,
+.CodeMirror div.CodeMirror-cursor {
+    font-family: var(--main-font-family);
+}
+
+#write code {
+    font-size: 14px;
+}
+
+#write li code,
+#write p code,
+#write span code {
+    border-radius: 4px;
+    margin: 0 2px;
+    padding: 2px 4px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/* 代码块字体 */
+.md-fences {
+    font-size: 0.9em;
+    margin: 0 0 20px;
+    padding: 0.4em 1em 0.3em;
+    transition: var(--transition);
+}
+
+/* 其他代码相关元素的字体 */
+.cm-s-typora-default .cm-code,
+.cm-s-typora-default .cm-comment,
+.cm-s-typora-default .cm-overlay {
+    font-family: var(--main-font-family);
+}
+
+#typora-source .CodeMirror-lines,
+.CodeMirror-wrap .CodeMirror-code pre {
+    font-family: var(--main-font-family);
+}
+
+.md-html-inline .md-meta,
+.md-ruby .md-meta {
+    font-family: var(--main-font-family);
+} 
+
+
+/* 主界面背景图片 */
+content {
+  background-color: transparent;
+  background-image: url("./onelight/img/bg.gif");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 200px auto;
+  transition: background-image 0.5s ease-in-out,
+    background-size 0.5s ease-in-out;
+}
+
+/* 一体化菜单界面背景图片 */
+div#megamenu-section-open {
+  background-color: transparent;
+  background-image: url("./onelight/img/bg3.gif");
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  background-size: 100px auto;
+  transition: background-image 0.5s ease-in-out,
+    background-size 0.5s ease-in-out;
+}
