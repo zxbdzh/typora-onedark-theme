@@ -46,19 +46,7 @@
 
 ---
 
-![image-20250108140354139](https://s2.loli.net/2025/01/08/fNQF1ZCOgGydEUL.png)
-
-![image-20250108140529374](https://s2.loli.net/2025/01/08/aMkKwdmVuTCtW4G.png)
-
-![image-20250119102419998](https://s2.loli.net/2025/01/19/4jotBCzeDdlAwfF.png)
-
-<details><summary><kbd>展开查看更多截图</summary></kbd>
-  <img src="https://s2.loli.net/2025/01/08/Ir1mgZCto4YS6lj.png"></br>
-  <img src="https://s2.loli.net/2025/01/08/ugxkC5UyvqGw6iP.png"></br>
-  <img src="https://s2.loli.net/2025/01/08/cAgBOqFoCMYE8S6.png"></br>
-	一体化菜单界面
-  <img src="https://s2.loli.net/2025/01/08/QF2UA9zPOW5X6ji.png"></br>
-</details>
+![](https://picgo.cn-sy1.rains3.com/2025/02/9d58bcb30e593146b8e1d93e70545a6d.png)
 
 ---
 
@@ -68,7 +56,7 @@
 >
 > **推荐**
 >
-> - 下载 [主题文件压缩包](https://github.com/caolib/typora-onelight-theme/releases)
+> - 下载 [主题文件压缩包](https://github.com/zxbdzh/typora-onedark-theme/releases)
 > - 在typora中选择 文件 → 偏好设置 → 外观 → 打开主题文件夹
 > - 将下载的压缩包解压，将**css文件**和**文件夹**粘贴到typora的主题文件夹中
 > - 重启Typora然后在菜单栏切换主题，大功告成
@@ -120,21 +108,8 @@
 >
 > 
 
----
 
-## 5.额外配置
-
-> [!tip] 
->
-> [typora-community-plugin](https://github.com/typora-community-plugin/typora-community-plugin)是一个增强 Typora 编辑体验的社区插件系统，你可以通过这个插件系统安装一些插件，比如给代码块添加一个复制按钮，具体安装可以参考官方说明
->
-> ![recording](https://s2.loli.net/2025/01/20/Fw36IH7otOaCfDW.gif)
->
-> 如果你使用这个插件系统并且安装了这个复制按钮插件的话，可以下载[onelight.user.css](https://github.com/caolib/typora-onelight-theme/blob/onelight/onelight.user.css)文件粘贴到主题文件夹，这个文件中有一些针对这个插件的样式，当然你也可以自行修改
-
----
-
-## 6.其他
+## 5.其他
 
 <img align='right' src="https://s2.loli.net/2025/01/04/zt7O3daMLDC5EHW.png" alt="喜欢" />✅ 一体化模式下主题效果更佳
 
